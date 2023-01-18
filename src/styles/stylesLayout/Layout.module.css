@@ -1,0 +1,8 @@
+.main_container {
+  min-height: 76.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6em;
+  flex-direction: column;
+}

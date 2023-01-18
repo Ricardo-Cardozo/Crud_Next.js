@@ -1,0 +1,26 @@
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  color: #fff;
+  background-color: #000;
+}
+
+.nav_container ul {
+  list-style: none;
+}
+
+.nav_container a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+.nav_container a:hover {
+  border: 1px solid #fff
+}
