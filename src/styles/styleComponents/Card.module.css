@@ -1,0 +1,41 @@
+.card_container {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 2em;
+}
+
+.card_container h3 {
+  margin-bottom: 1rem;
+  border-bottom: #000 1px solid ;
+  text-align: center;
+}
+
+.card_container label {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.card_container p {
+  font-weight: normal;
+}
+
+.card_container button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 73, 73);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.card_container button:hover {
+  background-color: rgb(205, 52, 52);
+}
