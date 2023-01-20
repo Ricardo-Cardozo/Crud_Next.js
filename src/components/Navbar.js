@@ -10,6 +10,9 @@ const Navbar = () => {
         <li>
           <Link href='/'>Home</Link>
         </li>
+        <li>
+          <Link href='/register'>Cadastrar</Link>
+        </li>
       </ul>
     </nav>
   )

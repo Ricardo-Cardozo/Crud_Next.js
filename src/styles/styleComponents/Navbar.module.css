@@ -9,6 +9,11 @@
 
 .nav_container ul {
   list-style: none;
+  display: flex;
+}
+
+.nav_container li {
+  margin-right: 1rem;
 }
 
 .nav_container a {

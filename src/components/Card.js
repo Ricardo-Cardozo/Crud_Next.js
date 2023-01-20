@@ -1,11 +1,12 @@
 import styles from "@/styles/styleComponents/Card.module.css";
+import Link from "next/link";
 
-const Card = ({ name, email, id, onError, onSuccess }) => {
+const Card = ({ name, email, id, onError, onSuccess, href, as }) => {
   const handleDelete = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch(`/api/clients/${id}`, {
-        method: "DELETE"
+        method: "DELETE",
       });
 
       const responseData = await response.json();
@@ -13,8 +14,8 @@ const Card = ({ name, email, id, onError, onSuccess }) => {
       if (!response.ok) {
         throw new Error(responseData.message);
       }
-      onSuccess(responseData.message)
-      window.location.reload()
+      onSuccess(responseData.message);
+      window.location.reload();
     } catch (err) {
       onError(err.message);
     }
@@ -32,6 +33,9 @@ const Card = ({ name, email, id, onError, onSuccess }) => {
         <p>{email}</p>
       </label>
       <button onClick={handleDelete}>Deletar</button>
+      <button className={styles.edit}>
+        <Link as={as} href={href}>Editar</Link>
+      </button>
     </div>
   );
 };

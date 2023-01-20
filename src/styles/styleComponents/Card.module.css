@@ -7,6 +7,7 @@
   flex-direction: column;
   width: 350px;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .card_container h3 {
@@ -38,4 +39,26 @@
 
 .card_container button:hover {
   background-color: rgb(205, 52, 52);
+}
+
+.card_container .edit {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 249, 73);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s;
+  margin-top: .5rem;
+}
+
+.card_container .edit:hover {
+  background-color: rgb(205, 187, 52);
+}
+
+.edit a {
+  text-decoration: none;
+  color: #000;
 }

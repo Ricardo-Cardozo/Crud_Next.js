@@ -36,7 +36,7 @@ export default async function handler(req, res) {
       } catch (error) {
         res
           .status(500)
-          .json({ message: "Ocorreu um error, tente mais tarde!" });
+          .json({ message: "Ocorreu um erro, tente mais tarde!" });
       }
 
       break;
